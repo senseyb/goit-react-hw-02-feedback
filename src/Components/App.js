@@ -34,7 +34,7 @@ class App extends Component {
           <FeedbackOptions onLeaveFeedback={this.addFeedback}></FeedbackOptions>
         </Section>
         <Section title="Statistics">
-          {this.countTotalFeedback() > 0 ? (
+          {this.countTotalFeedback() ? (
             <Statistics
               good={this.state.good}
               neutral={this.state.neutral}
